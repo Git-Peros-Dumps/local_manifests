@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- remotes -->
+	<remote name="ArhamDharewa"            fetch="https://github.com/ArhamDharewa" />
+	<remote name="PixelExtended-Devices"   fetch="https://github.com/PixelExtended-Devices" />
+  <remote name="Spark-Devices"           fetch="https://github.com/Spark-Devices" />
+  <remote name="StatiXOS"                fetch="https://github.com/StatiXOS" />
+
+    <!-- Device Tree -->
+	<project path="device/xiaomi/mojito"        name="device_xiaomi_mojito"         remote="PixelExtended-Devices"            revision="twelve" />
+	<project path="device/xiaomi/sm6150-common" name="device_xiaomi_sm6150-common"     remote="PixelExtended-Devices"          revision="twelve" />
+	
+    <!-- Vendor Tree -->
+    <project path="vendor/xiaomi"         name="vendor_mojito"     remote="ArhamDharewa"           revision="main" />
+    
+    <!-- Kernel Tree -->
+	<project path="kernel/xiaomi/sm6150"        name="android_kernel_xiaomi_mojito"            remote="Spark-Devices" revision="spark" clone-depth="1" />
+	
+	<!-- GCC -->
+	<project path="prebuilts/gcc/linux-x86/aarch64/arm64-gcc" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="StatiXOS"          revision="12.0.0" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi" remote="StatiXOS"          revision="12.0.0" clone-depth="1" />
+	
+</manifest>
