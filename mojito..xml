@@ -3,13 +3,13 @@
 
     <!-- remotes -->
 	<remote name="ArhamDharewa"            fetch="https://github.com/ArhamDharewa" />
-	<remote name="VoltageOS-Devices"   fetch="https://github.com/VoltageOS-Devices" />
+	<remote name="PixelExtended"   fetch="https://github.com/PixelExtended-Devices" />
   <remote name="Spark-Devices"           fetch="https://github.com/Spark-Devices" />
   <remote name="StatiXOS"                fetch="https://github.com/StatiXOS" />
 
     <!-- Device Tree -->
-	<project path="device/xiaomi/mojito"        name="device_xiaomi_mojito"         remote="ArhamDharewa"            revision="twelve" />
-	<project path="device/xiaomi/sm6150-common" name="device_xiaomi_sm6150-common"     remote="ArhamDharewa"          revision="twelve" />
+	<project path="device/xiaomi/mojito"        name="device_xiaomi_mojito"         remote="PixelExtended"            revision="twelve" />
+	<project path="device/xiaomi/sm6150-common" name="device_xiaomi_sm6150-common"     remote="PixelExtended"          revision="twelve" />
 	
     <!-- Vendor Tree -->
     <project path="vendor/xiaomi"         name="vendor_mojito"     remote="ArhamDharewa"           revision="main" />
